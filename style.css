@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  color: #111;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  text-align: center;
+}
+
+.hero {
+  background: #000;
+  color: white;
+}
+
+.about {
+  background: #f8f8f8;
+}
+
+.features {
+  background: #eaeaea;
+}
+
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact {
+  background: #ddd;
+}
