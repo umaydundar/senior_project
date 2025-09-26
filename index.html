@@ -3,39 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Website</title>
-  <link href="style.css" rel="stylesheet">
+  <title>Our Project</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <!-- Animation library -->
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-  <!-- Section 1 -->
-  <section class="hero" id="home">
-    <h1 data-aos="fade-up">Welcome to My Page</h1>
-    <p data-aos="fade-up" data-aos-delay="200">A modern GitHub Pages site</p>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#supervisor">Supervisor</a></li>
+      <li><a href="#reports">Reports</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#logs">Logs</a></li>
+      <li><a href="#video">Demo</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="graph-background">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M0 80 C150 100, 350 0, 500 80" stroke="#4e73df" fill="transparent" stroke-width="2"/>
+        <path d="M0 100 C150 50, 350 120, 500 40" stroke="#1cc88a" fill="transparent" stroke-width="2"/>
+        <path d="M0 60 C200 20, 300 140, 500 60" stroke="#e74a3b" fill="transparent" stroke-width="2"/>
+      </svg>
+    </div>
+    <h1 data-aos="fade-up">Our Project Title</h1>
+    <p data-aos="fade-up" data-aos-delay="200">A short tagline about the project</p>
   </section>
 
-  <!-- Section 2 -->
-  <section class="about" id="about" data-aos="fade-up">
-    <h2>About</h2>
-    <p>This is where I write about my project or myself.</p>
-  </section>
-
-  <!-- Section 3 -->
-  <section class="features" id="features" data-aos="fade-up">
-    <h2>Features</h2>
-    <div class="grid">
-      <div>🚀 Fast</div>
-      <div>🎨 Modern</div>
-      <div>📱 Responsive</div>
+  <!-- Team Section -->
+  <section id="team" class="about" data-aos="fade-up">
+    <h2>Meet the Team</h2>
+      <img src="assets/team/team-photo.jpg" alt="Team Photo" class="team-photo" data-aos="fade-up">
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="assets/team/member1.jpg" alt="Member 1">
+        <h3>Member 1</h3>
+        <p>Role</p>
+        </a href="https://github.com/username" target="_blank">GitHub</a> |
+        </a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+      </div>
+      <div class="team-member">
+        <img src="assets/team/member2.jpg" alt="Member 2">
+        <h3>Member 2</h3>
+        <p>Role</p>
+        </a href="https://github.com/username" target="_blank">GitHub</a> |
+        </a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+      </div>
+      <!-- Add more members -->
     </div>
   </section>
 
-  <!-- Section 4 -->
-  <section class="contact" id="contact" data-aos="fade-up">
+  <!-- Supervisor Section -->
+  <section id="supervisor" class="supervisor" data-aos="fade-up">
+    <h2>Supervisor</h2>
+    <div class="supervisor">
+      <img src="assets/team/supervisor.jpg" alt="Supervisor">
+      <h3>Prof. Supervisor</h3>
+      </a href="https://linkedin.com/in/supervisor" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Reports Section -->
+  <section id="reports" class="reports" data-aos="fade-up">
+    <h2>Reports</h2>
+    <div class="reports-grid">
+      <div class="report-item">
+        <a href="assets/reports/report1.pdf" target="_blank">Report 1 (PDF)</a>
+      </div>
+      <div class="report-item">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Google Drive Report</a>
+      </div>
+      <!-- Add more reports -->
+    </div>
+    <iframe src="assets/reports/report1.pdf" width="80%" height="500px"></iframe>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="assets/gallery/img1.jpg" alt="Screenshot 1">
+      <img src="assets/gallery/img2.jpg" alt="Screenshot 2">
+      <img src="assets/gallery/img3.jpg" alt="Screenshot 3">
+    </div>
+  </section>
+
+  <!-- Logs Section -->
+  <section id="logs" class="logs" data-aos="fade-up">
+    <h2>Weekly Logs</h2>
+    <h3>Team Logbook</h3>
+    <ul>
+      <li>Week 1: Initial project setup</li>
+      <li>Week 2: Database design</li>
+    </ul>
+
+    <h3>Individual Logs</h3>
+    <div class="logs-grid">
+      <div>
+        <h4>Member 1</h4>
+        <ul>
+          <li>Week 1: Researched frontend</li>
+          <li>Week 2: Built login page</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Member 2</h4>
+        <ul>
+          <li>Week 1: Set up backend</li>
+          <li>Week 2: API routes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video" class="video" data-aos="fade-up">
+    <h2>Final Demo Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+      title="Demo Video" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Email me at <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>Email: <a href="mailto:team@example.com">team@example.com</a></p>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
