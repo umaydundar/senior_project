@@ -7,6 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
@@ -14,59 +18,205 @@
   <nav class="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#supervisor">Supervisor</a></li>
+      <li><a href="#team">Meet The Team</a></li>
+      <li><a href="#supervisor"> Our Supervisor</a></li>
       <li><a href="#reports">Reports</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#logs">Logs</a></li>
-      <li><a href="#video">Demo</a></li>
+      <li><a href="#video">Demo Video</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="graph-background">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-        <path d="M0 80 C150 100, 350 0, 500 80" stroke="#4e73df" fill="transparent" stroke-width="2"/>
-        <path d="M0 100 C150 50, 350 120, 500 40" stroke="#1cc88a" fill="transparent" stroke-width="2"/>
-        <path d="M0 60 C200 20, 300 140, 500 60" stroke="#e74a3b" fill="transparent" stroke-width="2"/>
-      </svg>
-    </div>
-    <h1 data-aos="fade-up">Our Project Title</h1>
-    <p data-aos="fade-up" data-aos-delay="200">A short tagline about the project</p>
+      <div class="graph-background">
+        <svg id="stock-graph" viewBox="0 0 500 150" preserveAspectRatio="none"></svg>
+      </div>
+      <img src="logo.png" alt="Project Logo" class="hero-logo" data-aos="fade-down">
+      <h1 data-aos="fade-up">Our Project Title</h1>
+      <p data-aos="fade-up" data-aos-delay="200">The ultimate trend analyzer for everything you find on the internet</p>
   </section>
 
+  <section id="overview" class="overview">
+    <h2 class="overview-title">Project Overview</h2>
+
+    <div class="overview-grid">
+      <div class="overview-item">
+        <div class="icon">
+          <i class="fas fa-brain feature-icon"></i>
+        </div>
+        <div class="text">
+          <h3>AI-Powered Trend Tracker</h3>
+          <p>
+            Our system leverages machine learning to detect and analyze patterns in real time, helping you stay ahead of market movements and social discussions.
+          </p>
+        </div>
+      </div>
+
+      <div class="overview-item">
+        <div class="icon">
+          <i class="fas fa-comment"></i>
+        </div>
+        <div class="text">
+          <h3>Catch What Is Happening</h3>
+          <p>
+            Track live conversations and topics across multiple platforms, identifying the stories and trends people are engaging with the most.
+          </p>
+        </div>
+      </div>
+
+      <div class="overview-item">
+        <div class="icon">
+          <i class="fas fa-user-secret"></i>
+        </div>
+        <div class="text">
+          <h3>Fake Trend Analysis</h3>
+          <p>
+            Spot manipulated or artificial trends by analyzing abnormal spikes, bot activity, and irregular posting patterns.
+          </p>
+        </div>
+      </div>
+
+      <div class="overview-item">
+        <div class="icon">
+          <i class="fas fa-chart-pie"></i>
+        </div>
+        <div class="text">
+          <h3>Sentiment Analysis</h3>
+          <p>
+            Understand the emotions behind the trends by measuring public sentiment and tone in conversations.
+          </p>
+        </div>
+      </div>
+
+      <div class="overview-item">
+        <div class="icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="text">
+          <h3>Market Research</h3>
+          <p>
+            Gain insights into industries, competitors, and audiences with data-driven research on evolving consumer behaviors.
+          </p>
+        </div>
+      </div>
+
+      <div class="overview-item">
+        <div class="icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="text">
+          <h3>For Business or Personal Use</h3>
+          <p>
+            Whether you are a company tracking markets or an individual following interests, the platform adapts to your needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Team Section -->
-  <section id="team" class="about" data-aos="fade-up">
+  <section id="team" class="team" data-aos="fade-up">
     <h2>Meet the Team</h2>
       <img src="assets/team/team-photo.jpg" alt="Team Photo" class="team-photo" data-aos="fade-up">
     <div class="team-grid">
       <div class="team-member">
         <img src="assets/team/member1.jpg" alt="Member 1">
         <h3>Member 1</h3>
-        <p>Role</p>
-        </a href="https://github.com/username" target="_blank">GitHub</a> |
-        </a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+        <div class="social-links">
+          <div>
+            </a href="https://github.com/username" target="_blank">
+              <i class="fab fa-github"></i>
+            </a> |
+          </div>
+          <div>
+            </a href="https://linkedin.com/in/username" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="team-member">
         <img src="assets/team/member2.jpg" alt="Member 2">
         <h3>Member 2</h3>
-        <p>Role</p>
-        </a href="https://github.com/username" target="_blank">GitHub</a> |
-        </a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+        <div class="social-links">
+          <div>
+            </a href="https://github.com/username" target="_blank">
+              <i class="fab fa-github"></i>
+            </a> |
+          </div>
+          <div>
+            </a href="https://linkedin.com/in/username" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <!-- Add more members -->
+      <div class="team-member">
+        <img src="assets/team/member2.jpg" alt="Member 2">
+        <h3>Member 2</h3>
+        <div class="social-links">
+          <div>
+            </a href="https://github.com/username" target="_blank">
+              <i class="fab fa-github"></i>
+            </a> |
+          </div>
+          <div>
+            </a href="https://linkedin.com/in/username" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="assets/team/member2.jpg" alt="Member 2">
+        <h3>Member 2</h3>
+        <div class="social-links">
+          <div>
+            </a href="https://github.com/username" target="_blank">
+              <i class="fab fa-github"></i>
+            </a> |
+          </div>
+          <div>
+            </a href="https://linkedin.com/in/username" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="assets/team/member2.jpg" alt="Member 2">
+        <h3>Member 2</h3>
+        <div class="social-links">
+          <div>
+            </a href="https://github.com/username" target="_blank">
+              <i class="fab fa-github"></i>
+            </a> |
+          </div>
+          <div>
+            </a href="https://linkedin.com/in/username" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Supervisor Section -->
   <section id="supervisor" class="supervisor" data-aos="fade-up">
-    <h2>Supervisor</h2>
+    <h2>Our Supervisor</h2>
     <div class="supervisor">
       <img src="assets/team/supervisor.jpg" alt="Supervisor">
       <h3>Prof. Supervisor</h3>
-      </a href="https://linkedin.com/in/supervisor" target="_blank">LinkedIn</a>
+      <div class="social-links">
+        <div>
+          </a href="https://linkedin.com/in/username" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
     </div>
   </section>
 
@@ -75,14 +225,33 @@
     <h2>Reports</h2>
     <div class="reports-grid">
       <div class="report-item">
-        <a href="assets/reports/report1.pdf" target="_blank">Report 1 (PDF)</a>
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Project Information Form</a>
       </div>
       <div class="report-item">
-        </a href="https://drive.google.com/your-shared-link" target="_blank">Google Drive Report</a>
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Project Idea Presentation</a>
       </div>
-      <!-- Add more reports -->
+      <div class="report-item">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Assessment And Innovation Form</a>
+      </div>
+      <div class="report-item">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Project Specification Document</a>
+      </div>
+      <div class="report-item">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Analysis And Requirements Report</a>
+      </div>
+      <div class="report-item">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">CS 491 Final Presentation</a>
+      </div>
+      <div class="report-item">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Low Level Design Report</a>
+      </div>
+      <div class="report-item">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Final Report</a>
+      </div>
+      <div class="report-item">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">CS 492 Final Presentation</a>
+      </div>
     </div>
-    <iframe src="assets/reports/report1.pdf" width="80%" height="500px"></iframe>
   </section>
 
   <!-- Gallery Section -->
@@ -99,26 +268,42 @@
   <section id="logs" class="logs" data-aos="fade-up">
     <h2>Weekly Logs</h2>
     <h3>Team Logbook</h3>
-    <ul>
-      <li>Week 1: Initial project setup</li>
-      <li>Week 2: Database design</li>
-    </ul>
-
+    <div class="team-logs-grid">
+      <div class="logbook">
+        </a href="https://drive.google.com/your-shared-link" target="_blank">Weekly Meeting Logs</a>
+      </div>
+    </div>
     <h3>Individual Logs</h3>
     <div class="logs-grid">
       <div>
         <h4>Member 1</h4>
-        <ul>
-          <li>Week 1: Researched frontend</li>
-          <li>Week 2: Built login page</li>
-        </ul>
+        <div class="logbook">
+            </a href="https://drive.google.com/your-shared-link" target="_blank">Weekly Logs</a>
+        </div>
       </div>
       <div>
         <h4>Member 2</h4>
-        <ul>
-          <li>Week 1: Set up backend</li>
-          <li>Week 2: API routes</li>
-        </ul>
+        <div class="logbook">
+            </a href="https://drive.google.com/your-shared-link" target="_blank">Weekly Logs</a>
+        </div>
+      </div>
+      <div>
+        <h4>Member 1</h4>
+        <div class="logbook">
+            </a href="https://drive.google.com/your-shared-link" target="_blank">Weekly Logs</a>
+        </div>
+      </div>
+      <div>
+        <h4>Member 1</h4>
+        <div class="logbook">
+            </a href="https://drive.google.com/your-shared-link" target="_blank">Weekly Logs</a>
+        </div>
+      </div>
+      <div>
+        <h4>Member 1</h4>
+        <div class="logbook">
+            </a href="https://drive.google.com/your-shared-link" target="_blank">Weekly Logs</a>
+        </div>
       </div>
     </div>
   </section>
@@ -135,6 +320,22 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:team@example.com">team@example.com</a></p>
   </section>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/fennec-logo.png" alt="Project Logo">
+    </div>
+    <h3>Project name</h3>
+
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#team">Team & About Us</a>
+      <a href="#reports">Reports</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="copyright">© 2025 _. All rights reserved.</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
