@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,6 @@
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
@@ -28,7 +27,7 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+
   <section id="home" class="hero">
       <div class="graph-background">
         <svg id="stock-graph" viewBox="0 0 500 150" preserveAspectRatio="none"></svg>
@@ -116,8 +115,6 @@
     </div>
   </section>
 
-
-  <!-- Team Section -->
   <section id="team" class="team" data-aos="fade-up">
     <h2>Meet the Team</h2>
       <img src="assets/team/team-photo.jpg" alt="Team Photo" class="team-photo" data-aos="fade-up">
@@ -205,7 +202,6 @@
     </div>
   </section>
 
-  <!-- Supervisor Section -->
   <section id="supervisor" class="supervisor" data-aos="fade-up">
     <h2>Our Supervisor</h2>
     <div class="supervisor">
@@ -220,7 +216,6 @@
     </div>
   </section>
 
-  <!-- Reports Section -->
   <section id="reports" class="reports" data-aos="fade-up">
     <h2>Reports</h2>
     <div class="reports-grid">
@@ -254,7 +249,7 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
+
   <section id="gallery" class="gallery" data-aos="fade-up">
     <h2>Gallery</h2>
     <div class="gallery-grid">
@@ -264,7 +259,7 @@
     </div>
   </section>
 
-  <!-- Logs Section -->
+
   <section id="logs" class="logs" data-aos="fade-up">
     <h2>Weekly Logs</h2>
     <h3>Team Logbook</h3>
@@ -308,14 +303,14 @@
     </div>
   </section>
 
-  <!-- Video Section -->
+
   <section id="video" class="video" data-aos="fade-up">
     <h2>Final Demo Video</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
       title="Demo Video" frameborder="0" allowfullscreen></iframe>
   </section>
 
-  <!-- Contact Section -->
+
   <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:team@example.com">team@example.com</a></p>
@@ -341,3 +336,350 @@
   <script src="script.js"></script>
 </body>
 </html>
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniTrend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Professional landing page for trend analysis project, fully animated and responsive." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="nav">
+    <div class="brand">
+      <img src="assets/logo_small.png" alt="logo">
+      <h4>OmniTrend</h4>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#team">Meet The Team</a>
+      <a href="#supervisor"> Our Supervisor</a>
+      <a href="#reports">Reports</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#logs">Logs</a>
+      <a href="#video">Demo Video</a>
+      <a href="#contact">Contact</a>
+      <button class="nav-cta">Get Demo</button>
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="graph-background">
+        <svg id="stock-graph" viewBox="0 0 500 150" preserveAspectRatio="none"></svg>
+      </div>
+      <img src="assets/logo_small.png" alt="Project Logo" class="hero-logo" data-aos="fade-down">
+      <h1 data-aos="fade-up">OmniTrend</h1>
+      <p data-aos="fade-up" data-aos-delay="200">The ultimate trend analyzer for everything you find on the internet</p>
+      <a href="#overview" class="btn btn-primary-hero" data-aos="fade-up" data-aos-delay="400">Learn More</a>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview" class="overview">
+      <h2>Project Overview</h2>
+      <div class="overview-grid">
+        <div class="overview-item reveal">
+          <div class="icon">
+            <i class="fas fa-brain feature-icon"></i>
+          </div>
+          <h3>AI-Powered Trend Tracker</h3>
+          <p>Our system leverages machine learning to detect and analyze patterns in real time, helping you stay ahead of market movements and social discussions.</p>
+        </div>
+        <div class="overview-item reveal">
+          <div class="icon">
+            <i class="fas fa-comment"></i>
+          </div>
+          <h3>Catch What Is Happening</h3>
+          <p>Track live conversations and topics across multiple platforms, identifying the stories and trends people are engaging with the most.</p> 
+        </div>
+        <div class="overview-item reveal">
+          <div class="icon">
+            <i class="fas fa-user-secret"></i>
+          </div>
+          <h3>Fake Trend Analysis</h3>
+          <p>Spot manipulated or artificial trends by analyzing abnormal spikes, bot activity, and irregular posting patterns.</p>
+        </div>
+        <div class="overview-item reveal">
+          <div class="icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <h3>Sentiment Analysis</h3>
+          <p> Understand the emotions behind the trends by measuring public sentiment and tone in conversations.</p>
+        </div>
+        <div class="overview-item reveal">
+          <div class="icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Market Research</h3>
+          <p>Gain insights into industries, competitors, and audiences with data-driven research on evolving consumer behaviors.</p>
+        </div>
+        <div class="overview-item reveal">
+          <div class="icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>For Business or Personal Use</h3>
+          <p>Whether you are a company tracking markets or an individual following interests, the platform adapts to your needs.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="team" class="team" data-aos="fade-up">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src= "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Member 1">
+          <h3>Umay Dündar</h3>
+          <div class="social-links">
+            <div>
+              <a href="https://github.com/umaydundar" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a> |
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umay-d%C3%BCndar-761a042b2/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=150&q=80" alt="Member 2">
+          <h3>Rida Fatıma</h3>
+          <div class="social-links">
+            <div>
+              <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a> |
+            </div>
+            <div>
+              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Member 3">
+          <h3>İlsu Karadağ</h3>
+          <div class="social-links">
+            <div>
+              <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a> |
+            </div>
+            <div>
+              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=1200&q=80" alt="Member 4">
+          <h3>Emine Fidan</h3>
+          <div class="social-links">
+            <div>
+              <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a> |
+            </div>
+            <div>
+              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Member 5">
+          <h3>Deniz Çatakoğlu</h3>
+          <div class="social-links">
+            <div>
+              <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a> |
+            </div>
+            <div>
+              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="supervisor" class="supervisor" data-aos="fade-up">
+      <h2>Our Supervisors</h2>
+      <div class="team-grid">
+        <div class="supervisor-div">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Supervisor">
+          <h3>Primary Supervisor: Professor Dr. Fazlı Can</h3>
+          <div class="social-links">
+            <div>
+              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="supervisor-div">
+          <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=80" alt="Innovation Expert">
+          <h3>Innovation Expert: TBD</h3>
+          <div class="social-links">
+            <div>
+              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reports" class="reports" data-aos="fade-up">
+      <h2>Reports</h2>
+      <div class="reports-grid">
+        <div class="report-item">
+          <p>Project Information Form</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="report-item">
+          <p>Project Idea Presentation</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="report-item">
+          <p>Assessment And Innovation Form</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="report-item">
+          <p>Project Specification Document</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="report-item">
+          <p>Analysis And Requirements Report</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="report-item">
+          <p>CS 491 Final Presentation</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="report-item">
+          <p>Low Level Design Report</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="report-item">
+          <p>Final Report</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="report-item">
+          <p>CS 492 Final Presentation</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery" data-aos="fade-up">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">       
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Screenshot 2">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Screenshot 3">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Screenshot 4">
+        <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Screenshot 5">
+        <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Screenshot 6">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Screenshot 7">
+      </div>
+    </section>
+
+
+    <section id="logs" class="logs" data-aos="fade-up">
+      <h2>Weekly Logs</h2>
+      <h3>Team Logbook</h3>
+      <div class="team-logs-grid">
+        <div class="logbook">
+          <p>Weekly Meeting Logs</p>
+          <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+      <h3>Individual Logs</h3>
+      <div class="logs-grid">
+        <div>
+          <div class="logbook">
+              <p>Umay Dündar's Weekly Logs</p>
+              <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+        <div>
+          <div class="logbook">
+              <p>Rida Fatıma's Weekly Logs</p>
+              <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+        <div>
+          <div class="logbook">
+              <p>İlsu Karadağ's Weekly Logs</p>
+              <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+        <div>
+          <div class="logbook">
+              <p>Emine Fidan's Weekly Logs</p>
+              <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+        <div>
+          <div class="logbook">
+              <p>Deniz Çatakoğlu's Weekly Logs</p>
+              <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="video" class="video" data-aos="fade-up">
+      <h2 class="reveal">Final Demo Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        title="Demo Video" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+
+    <section id="contact" class="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>If you have any questions you can use this email address to contact us <a href="mailto:umay.dundar@ug.bilkent.edu.tr">umay.dundar@ug.bilkent.edu.tr</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="assets/logo_small.png" alt="Project Logo">
+    </div>
+    <h3>OmniTrend</h3>
+    <p class="copyright">© 2025 _. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const revealElems = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {if(entry.isIntersecting){entry.target.classList.add('in-view');observer.unobserve(entry.target);}});
+    }, {threshold:0.1});
+    revealElems.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+
